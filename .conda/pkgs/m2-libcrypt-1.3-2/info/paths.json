@@ -1,0 +1,11 @@
+{
+  "paths": [
+    {
+      "_path": "Library/usr/bin/msys-crypt-0.dll",
+      "path_type": "hardlink",
+      "sha256": "7531a39794a8c78d6f3bb78c733208e7e131397f63386463b4f61233f7b9d454",
+      "size_in_bytes": 10424
+    }
+  ],
+  "paths_version": 1
+}

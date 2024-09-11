@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "5",
+  "build_number": 5,
+  "channel": "https://repo.anaconda.com/pkgs/msys2/win-64",
+  "constrains": [],
+  "depends": [
+    "m2-msys2-runtime",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "features": "",
+  "fn": "m2-bash-4.3.042-5.tar.bz2",
+  "license": "GPL",
+  "md5": "cbad0d9c9c332c9304352e0e457845b0",
+  "name": "m2-bash",
+  "platform": "win32",
+  "sha256": "440e054eea8c119ebfe609d1e26a910879bb6bce8a331b8d74654122024b367c",
+  "size": 3684402,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/msys2/win-64/m2-bash-4.3.042-5.tar.bz2",
+  "version": "4.3.042"
+}

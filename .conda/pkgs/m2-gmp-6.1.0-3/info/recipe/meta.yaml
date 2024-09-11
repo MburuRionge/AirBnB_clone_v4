@@ -1,0 +1,40 @@
+# This file created by conda-build 0+unknown
+# meta.yaml template originally from:
+# C:\Users\ray\conda\conda-recipes\msys2\m2-gmp, last modified Mon Dec 19 01:03:46 2016
+# ------------------------------------------------
+
+package:
+    name: m2-gmp
+    version: 6.1.0
+source:
+    md5: 53dcd1895949b977ff0a5374364abf66
+    url: http://msys2-sources.continuum.io/msys2-sources/msys/sources/gmp-6.1.0-2.src.tar.gz
+build:
+    number: '3'
+    string: '3'
+requirements:
+    build: []
+    run:
+        - msys2-conda-epoch >=20160418
+about:
+    home: https://gmplib.org/
+    license: GPL, LGPL3
+    summary: A free library for arbitrary precision arithmetic
+extra:
+    msys2-binaries:
+        win-32:
+            md5: c281717b431f0431f3fb5f9f9e1611d2
+            mv-dsts:
+                - Library/
+            mv-srcs:
+                - '*'
+            srcpkg: msys/gmp
+            url: http://msys2-sources.continuum.io/msys2-sources/msys/i686/gmp-6.1.0-2-i686.pkg.tar.xz
+        win-64:
+            md5: 2f61e08e7ac091759bfa59236e2e98db
+            mv-dsts:
+                - Library/
+            mv-srcs:
+                - '*'
+            srcpkg: msys/gmp
+            url: http://msys2-sources.continuum.io/msys2-sources/msys/x86_64/gmp-6.1.0-2-x86_64.pkg.tar.xz

@@ -1,0 +1,22 @@
+{
+  "arch": "x86_64",
+  "build": "3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/msys2/win-64",
+  "constrains": [],
+  "depends": [
+    "msys2-conda-epoch >=20160418"
+  ],
+  "features": "",
+  "fn": "m2-gmp-6.1.0-3.tar.bz2",
+  "license": "GPL, LGPL3",
+  "md5": "580aedcf60ab0a4bdb892da3fe83716a",
+  "name": "m2-gmp",
+  "platform": "win32",
+  "sha256": "b0eb0b920a73c01f27337bdb3818d37d8c876165cfd9139a962297c44320f817",
+  "size": 417168,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/msys2/win-64/m2-gmp-6.1.0-3.tar.bz2",
+  "version": "6.1.0"
+}

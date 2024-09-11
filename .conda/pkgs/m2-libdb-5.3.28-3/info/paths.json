@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "Library/usr/bin/msys-db-5.3.dll",
+      "path_type": "hardlink",
+      "sha256": "f57f4103c9b975b009f8c44c922b75ee463e4b4751730b0d1c8bd0c98f8ca8ad",
+      "size_in_bytes": 1589383
+    },
+    {
+      "_path": "Library/usr/bin/msys-db_cxx-5.3.dll",
+      "path_type": "hardlink",
+      "sha256": "536449b50455458e80d7990d1ba567d6b810682fd5d3c19b291db8e73271d065",
+      "size_in_bytes": 1710595
+    }
+  ],
+  "paths_version": 1
+}

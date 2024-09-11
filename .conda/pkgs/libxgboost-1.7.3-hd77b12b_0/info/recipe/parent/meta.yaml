@@ -1,0 +1,235 @@
+{% set name = "xgboost" %}
+{% set version = "1.7.3" %}
+
+package:
+  name: {{ name|lower }}-split
+  version: {{ version }}
+
+source:
+  # we have to use git urls here to get the submodules needed for the
+  # build - the archive does not have these.
+  git_url: https://github.com/dmlc/xgboost
+  git_tag: v{{ version }}
+  patches:
+    - 0001-conda-Unbundle-libxgboost.-dll-dylib-so.patch            # [not win]
+    # Since the code is cloned from git, the line endings differ between unix and windows.
+    # Perhaps if git's autocrlf=false on the systems, one single patch would work.
+    # Not relying on that, this was the easiest way found to allow the patches to work on
+    # their respective platforms. Open to more thoughts.
+    - 0001-conda-Unbundle-libxgboost.-dll-dylib-so-WINDOWS.patch    # [win]
+
+build:
+  skip: True  # [py<38]
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - git                    # [not win]
+    - m2-git                 # [win]
+    - patch                  # [not win]
+    - m2-patch               # [win]
+    - cmake
+    - make  # [not win]
+    - llvm-openmp  # [osx]
+    - ninja
+  host:
+    - llvm-openmp  # [osx]
+    - python
+    - setuptools
+    - pip
+    - wheel
+
+outputs:
+  - name: libxgboost
+    script: install-libxgboost.sh  # [not win]
+    script: install-win-wrapper.bat  # [win]
+    build:
+      skip: True  # [py<38]
+      activate_in_script: True
+      ignore_run_exports:
+        - libgcc-ng  # [linux]
+        - libstdcxx-ng  # [linux]
+      missing_dso_whitelist:
+        - $RPATH/ld64.so.1  # [s390x]
+        - $RPATH/libgomp.so.1  # [linux]
+        - /usr/lib/libc++.1.dylib  # [osx]
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+        - git
+        - cmake
+        - make         # [not win]
+        - llvm-openmp  # [osx]
+      host:
+        - llvm-openmp  # [osx]
+      run:
+        - llvm-openmp  # [osx]
+        - _openmp_mutex  # [linux]
+
+  - name: _py-xgboost-mutex
+    version: 2.0
+    build:
+      skip: True  # [py<38]
+      string: cpu_0
+      number: 0
+    test:
+      commands:
+        - echo "Hello py boost!"
+
+  - name: py-xgboost
+    script: install-py-xgboost.sh  # [not win]
+    script: install-win-wrapper.bat  # [win]
+    build:
+      skip: True  # [py<38]
+    requirements:
+      build:
+        # m2-base is only included to get around builder environment issues.
+        # This will currently only pass when RDPing into a Windows dev instance.
+        - m2-base  # [win]
+      host:
+        - {{ pin_subpackage('libxgboost', exact=True) }}
+        - python
+        - setuptools
+        - pip
+        - wheel
+      run:
+        - {{ pin_subpackage('libxgboost', exact=True) }}
+        - {{ pin_subpackage('_py-xgboost-mutex', exact=True) }}
+        - python
+        - numpy
+        - scipy
+        - scikit-learn
+    test:
+      requires:
+        - pip
+      script: test-py-xgboost.py        # [not s390x]
+      imports:
+        - xgboost
+      commands:
+        - pip check
+
+  - name: py-xgboost-cpu
+    build:
+      skip: True  # [py<38]
+    requirements:
+      host:
+        - python
+        - {{ pin_subpackage('py-xgboost', exact=True) }}
+      run:
+        - python
+        - {{ pin_subpackage('py-xgboost', exact=True) }}
+
+  - name: xgboost
+    build:
+      skip: True  # [py<38]
+    requirements:
+      host:
+        - python
+        # we install llvm-opnemp here to convince conda to
+        # install llvm-openmp in the top-level host env above
+        - llvm-openmp  # [osx]
+      run:
+        - python
+        - {{ pin_subpackage('py-xgboost', exact=True) }}
+
+  - name: _r-xgboost-mutex
+    version: 2.0
+    build:
+      string: cpu_0
+      number: 0
+      skip: True  # [py<38 or skip_r_bindings]
+    test:
+      commands:
+        - echo "Hello R boost!"
+
+  - name: r-xgboost
+    script: install-r-xgboost.sh  # [not win]
+    script: install-r-xgboost.bat  # [win]
+    build:
+      skip: True  # [py<38 or skip_r_bindings]
+      rpaths:
+        - lib/R/lib
+      ignore_run_exports:
+        - libgcc-ng  # [linux]
+        - libstdcxx-ng  # [linux]
+      missing_dso_whitelist:
+        - $RPATH/R.dll                       # [win]
+        - /usr/lib/libc++.1.dylib            # [osx]
+        - lib/libgcc_s.so.1   # [linux]
+        - lib/libstdc++.so.6  # [linux]
+    requirements:
+      build:
+        - {{ compiler('m2w64_c') }}          # [win]
+        - {{ compiler('m2w64_cxx') }}        # [win]
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+        - llvm-openmp            # [osx]
+        - git
+        - make                   # [not win]
+        - posix                  # [win]
+        - cmake
+        - ninja
+      host:
+        - {{ pin_subpackage('libxgboost', exact=True) }}
+        - r-base
+        - llvm-openmp  # [osx]
+        - r-matrix
+        - r-data.table
+        - r-magrittr
+        - r-jsonlite
+        - r-knitr
+      run:
+        - {{ pin_subpackage('libxgboost', exact=True) }}
+        - {{ pin_subpackage('_r-xgboost-mutex', exact=True) }}
+        - llvm-openmp  # [osx]
+        - r-base
+        - r-matrix
+        - r-data.table
+        - r-magrittr
+        - r-jsonlite
+        - _openmp_mutex  # [linux]
+    test:
+      files:
+        - test-r-xgboost.r
+      commands:
+        - Rscript test-r-xgboost.r
+
+  - name: r-xgboost-cpu
+    build:
+      skip: True  # [py<38 or skip_r_bindings]
+    requirements:
+      host:
+        - r-base
+      run:
+        - r-base
+        - {{ pin_subpackage('r-xgboost', exact=True) }}
+
+about:
+  home: https://github.com/dmlc/xgboost
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: |
+    Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for
+    Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink
+    and DataFlow
+  description: |
+    XGBoost is an optimized distributed gradient boosting library designed to be highly efficient,
+    flexible and portable. It implements machine learning algorithms under the Gradient Boosting
+    framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many
+    data science problems in a fast and accurate way. The same code runs on major distributed
+    environment (Hadoop, SGE, MPI) and can solve problems beyond billions of examples.
+  doc_url: https://xgboost.readthedocs.io/
+  dev_url: https://github.com/dmlc/xgboost/
+
+extra:
+  feedstock-name: xgboost
+  recipe-maintainers:
+    - aldanor
+    - fhoehle
+    - jakirkham
+    - ksangeek
+    - xhochy

@@ -1,0 +1,7 @@
+.navbar div a {
+    font-size: 21px; font-weight: 600; color: white; text-align: right;
+}
+.navbar div logo a{
+    color: red;
+    font-size: 36px;
+}

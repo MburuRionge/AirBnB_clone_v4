@@ -1,0 +1,13 @@
+prefix=C:/b/abs_63cyjj1grl/croot/libgd_1677002256784/_h_env/Library
+exec_prefix=C:/b/abs_63cyjj1grl/croot/libgd_1677002256784/_h_env/Library
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gd
+Description: GD graphics library
+Version: ..
+Requires:
+Requires.private: freetype2, zlib, libpng, libjpeg, libtiff-4, fontconfig
+Cflags: -I${includedir}
+Libs.private: C:/b/abs_63cyjj1grl/croot/libgd_1677002256784/_h_env/Library/lib/libwebp.lib
+Libs: -L${libdir} -lgd

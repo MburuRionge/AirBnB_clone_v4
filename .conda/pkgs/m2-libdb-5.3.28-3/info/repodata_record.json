@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/msys2/win-64",
+  "constrains": [],
+  "depends": [
+    "m2-gcc-libs",
+    "m2-msys2-runtime",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "features": "",
+  "fn": "m2-libdb-5.3.28-3.tar.bz2",
+  "license": "GPL, custom",
+  "md5": "f72cd86f614201ac35eae074c5714464",
+  "name": "m2-libdb",
+  "platform": "win32",
+  "sha256": "4ebecf366e2ed989c32ac181ff023a6db4e24b919a304d7c9474c9347e6f81a8",
+  "size": 1367795,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/msys2/win-64/m2-libdb-5.3.28-3.tar.bz2",
+  "version": "5.3.28"
+}

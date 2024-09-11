@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "py310haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "features": "",
+  "fn": "lockfile-0.12.2-py310haa95532_0.conda",
+  "legacy_bz2_md5": "618a6d9b8d3ed9196997b909a026a988",
+  "legacy_bz2_size": 19884,
+  "license": "MIT",
+  "md5": "72435237d74fb3cba316953403401e99",
+  "name": "lockfile",
+  "platform": "win32",
+  "sha256": "d947ea3592b102acea64d7345a7720bd97fd32e830ec098fbfafab66ad6ee69c",
+  "size": 20093,
+  "subdir": "win-64",
+  "timestamp": 1642083726544,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/lockfile-0.12.2-py310haa95532_0.conda",
+  "version": "0.12.2"
+}

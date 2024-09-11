@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -x
+
+# resolving test issues, see: https://github.com/libgd/libgd/issues/763#issuecomment-918049103
+export TMPDIR=$SRC_DIR/temp_files
+mkdir -p $TMPDIR
+
+if [[ ${target_platform} != *-64 ]]; then
+  # https://github.com/libgd/libgd/issues/278
+  export CFLAGS="$CFLAGS -ffp-contract=off"
+fi
+
+find ${PREFIX} -name '*.la' -delete
+autoreconf -vfi
+./configure --prefix=$PREFIX \
+            --without-xpm \
+            --without-x \
+            --disable-werror \
+|| { cat config.log; exit 1; }
+
+make && make install
+
+if [[ $target_platform == osx-64 ]]; then
+    make check || failed=1
+    grep -rl "DYLD_LIBRARY_PATH=" tests | xargs sed -i.bak "s~DYLD_LIBRARY_PATH=.*~DYLD_LIBRARY_PATH=$PREFIX/lib~g"
+fi
+
+# see: https://github.com/libgd/libgd/issues/302
+export FREETYPE_PROPERTIES=truetype:interpreter-version=35
+if [[ $target_platform != linux-s390x ]]; then # 2 failed tests on S390x
+  export FREETYPE_PROPERTIES=truetype:interpreter-version=35
+  make check || { cat tests/test-suite.log; exit 1; }
+fi
+
+# We can remove this when we start using the new conda-build.
+find $PREFIX -name '*.la' -delete

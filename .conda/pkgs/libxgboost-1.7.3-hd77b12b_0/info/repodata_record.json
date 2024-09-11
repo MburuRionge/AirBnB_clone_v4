@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "hd77b12b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "features": "",
+  "fn": "libxgboost-1.7.3-hd77b12b_0.conda",
+  "legacy_bz2_md5": "72c8ab9e335081d1d63300d2840ef60c",
+  "legacy_bz2_size": 2735194,
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "61e2dcb1bd3eeed66743cff670b8c767",
+  "name": "libxgboost",
+  "platform": "win32",
+  "sha256": "9c72ad93e8429e5ea5be0aa06ac7825a8894b3262c0a90c2955b6e350fdcf4d6",
+  "size": 1593798,
+  "subdir": "win-64",
+  "timestamp": 1675461642370,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/libxgboost-1.7.3-hd77b12b_0.conda",
+  "version": "1.7.3"
+}

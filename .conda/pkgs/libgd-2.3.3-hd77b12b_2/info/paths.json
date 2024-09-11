@@ -1,0 +1,271 @@
+{
+  "paths": [
+    {
+      "_path": "Library/bin/bdftogd",
+      "path_type": "hardlink",
+      "sha256": "79d3c53b78d95a1fb1951a36e2aac1d0942856dd70a156cb332cf5f305f06f95",
+      "size_in_bytes": 3997
+    },
+    {
+      "_path": "Library/bin/gd2copypal.exe",
+      "path_type": "hardlink",
+      "sha256": "811d0f08952235fb10759ed4662a15f40606d0c12921940831421590940847eb",
+      "size_in_bytes": 10752
+    },
+    {
+      "_path": "Library/bin/gd2togif.exe",
+      "path_type": "hardlink",
+      "sha256": "ac4f7f6b4adef959bf383d69dbda895558693e221adb9727642c6c5e01c761d2",
+      "size_in_bytes": 10240
+    },
+    {
+      "_path": "Library/bin/gd2topng.exe",
+      "path_type": "hardlink",
+      "sha256": "926f744dee63a6edbbe849f4e177e295b32d85eba132ffb4a6472ff5eaccd88a",
+      "size_in_bytes": 10752
+    },
+    {
+      "_path": "Library/bin/gdcmpgif.exe",
+      "path_type": "hardlink",
+      "sha256": "308259bc8f3fe5605654c54176b6f38cc12a3a70a1d3104b34b94f229757abd8",
+      "size_in_bytes": 10752
+    },
+    {
+      "_path": "Library/bin/gdparttopng.exe",
+      "path_type": "hardlink",
+      "sha256": "9be6aeb7c57fad4983c81209906aa0367f7fb748bce645c5e8560d71edbf2a1c",
+      "size_in_bytes": 10752
+    },
+    {
+      "_path": "Library/bin/gdtopng.exe",
+      "path_type": "hardlink",
+      "sha256": "645bc205c34c3ea6d26c77f3af6cad6e154b004539a398ff77120ebbe2c4cdd8",
+      "size_in_bytes": 10240
+    },
+    {
+      "_path": "Library/bin/giftogd2.exe",
+      "path_type": "hardlink",
+      "sha256": "41ad2361605a4a2f9a94cd238b9973954c807cd6b7350e8eafb2d9976cb17240",
+      "size_in_bytes": 10752
+    },
+    {
+      "_path": "Library/bin/libgd.dll",
+      "path_type": "hardlink",
+      "sha256": "153b611147673f641a0a9a84c2c34eaf3a2931c9df5a4c48ac3ca6d6b319855d",
+      "size_in_bytes": 618496
+    },
+    {
+      "_path": "Library/bin/pngtogd.exe",
+      "path_type": "hardlink",
+      "sha256": "20e226dbe3f866f6931bef9edd0a5a0b075d5fd400cee4558eb33488cd6ea4f3",
+      "size_in_bytes": 10240
+    },
+    {
+      "_path": "Library/bin/pngtogd2.exe",
+      "path_type": "hardlink",
+      "sha256": "a721bc8467d456b1e0cfc249830d519ad9e83698a8dc27b110b0cae9112a041d",
+      "size_in_bytes": 10752
+    },
+    {
+      "_path": "Library/include/gd.h",
+      "path_type": "hardlink",
+      "sha256": "9b50770ef2ae01636f258e33cb81c8c35d4f282f602e9216b73854e3c1a108fd",
+      "size_in_bytes": 60084
+    },
+    {
+      "_path": "Library/include/gd_color_map.h",
+      "path_type": "hardlink",
+      "sha256": "651690d56592975310220013e59a1fe9dba7d27f64fd77c004311ce7540c6b84",
+      "size_in_bytes": 478
+    },
+    {
+      "_path": "Library/include/gd_errors.h",
+      "path_type": "hardlink",
+      "sha256": "b62365abcca9db1c61ab630e3a1582bee1d64ebc3392c5cc956a6d61367d98ca",
+      "size_in_bytes": 1503
+    },
+    {
+      "_path": "Library/include/gd_io.h",
+      "path_type": "hardlink",
+      "sha256": "6169c37be0c79fa1040bfa980e3bf5597775f6332c97acf542618d26c07da80a",
+      "size_in_bytes": 2931
+    },
+    {
+      "_path": "Library/include/gdcache.h",
+      "path_type": "hardlink",
+      "sha256": "1e917251274392ab183a080df2b6feabbb8819a2a107e314db1cefc9c09ade5f",
+      "size_in_bytes": 2994
+    },
+    {
+      "_path": "Library/include/gdfontg.h",
+      "path_type": "hardlink",
+      "sha256": "be02beef98b36f7f3471e2bfcf9ed4d5b9eb929b07eef9f7ef459d7a34e38766",
+      "size_in_bytes": 553
+    },
+    {
+      "_path": "Library/include/gdfontl.h",
+      "path_type": "hardlink",
+      "sha256": "718fb4d1a992cb93cdd423bbb4e8c9688f19f43e0542d7e12398f9c9905a2d3c",
+      "size_in_bytes": 551
+    },
+    {
+      "_path": "Library/include/gdfontmb.h",
+      "path_type": "hardlink",
+      "sha256": "704e6f4c5fa60f85c44ea9d5f6f14c7489842784efe1a19bc23a472ca3399150",
+      "size_in_bytes": 519
+    },
+    {
+      "_path": "Library/include/gdfonts.h",
+      "path_type": "hardlink",
+      "sha256": "281c5777fcdf9ad4c1cd2538af836c84d725f5d2e4a13f09160bc76111534829",
+      "size_in_bytes": 515
+    },
+    {
+      "_path": "Library/include/gdfontt.h",
+      "path_type": "hardlink",
+      "sha256": "db4968e3f05c8e76feba9a821047c8c6f0f9103c3341371e0083e13a18f0d4f6",
+      "size_in_bytes": 546
+    },
+    {
+      "_path": "Library/include/gdfx.h",
+      "path_type": "hardlink",
+      "sha256": "9e9f12e08e586ddb24ea3cee58611aefd403044ec40bf03a6861a77c91c56fbe",
+      "size_in_bytes": 496
+    },
+    {
+      "_path": "Library/include/gdpp.h",
+      "path_type": "hardlink",
+      "sha256": "63fe761e0f8e249313a2dfdc48088c9764525eff1d4401b1b7f188a4aee8cd7f",
+      "size_in_bytes": 51975
+    },
+    {
+      "_path": "Library/lib/libgd.lib",
+      "path_type": "hardlink",
+      "sha256": "2a06cad425ad481a889f0932c16ccaf5a470bdcbe4d715c0ed2906973fd8cfe6",
+      "size_in_bytes": 54358
+    },
+    {
+      "_path": "Library/lib/pkgconfig/gdlib.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "C:/b/abs_63cyjj1grl/croot/libgd_1677002256784/_h_env",
+      "sha256": "4e6321ab95041c7df24d771e62fbd09f30ff49b4bbdd758590f969ec7b11c1c4",
+      "size_in_bytes": 486
+    },
+    {
+      "_path": "Library/share/doc/gd-/INSTALL",
+      "path_type": "hardlink",
+      "sha256": "afc87587a5a141c13a9dd1e0feaa55ce8bd3384909c2a5fa532f61b7560cd5fb",
+      "size_in_bytes": 15743
+    },
+    {
+      "_path": "Library/share/doc/gd-/README.CMAKE",
+      "path_type": "hardlink",
+      "sha256": "cd02d9a56beb46558952f3a86ef813263c43194f47a4ccf1ee5400954a932a4d",
+      "size_in_bytes": 2915
+    },
+    {
+      "_path": "Library/share/doc/gd-/README.JPN",
+      "path_type": "hardlink",
+      "sha256": "5e1e6b5b7e1193a5eebe392b70fc61f10a6f3ee4b7758d6e56a6c4a71bc3b31d",
+      "size_in_bytes": 1912
+    },
+    {
+      "_path": "Library/share/doc/gd-/README.TESTING",
+      "path_type": "hardlink",
+      "sha256": "862e63279fb67b0aa14797670f0a384d55a8e44c2d39e106519406d2681bfd04",
+      "size_in_bytes": 2452
+    },
+    {
+      "_path": "Library/share/doc/gd-/README.TXT",
+      "path_type": "hardlink",
+      "sha256": "cdb702583e3f865f16f083f30e51964627143767f95e762d323a1ca9cbc274a4",
+      "size_in_bytes": 2025
+    },
+    {
+      "_path": "Library/share/doc/gd-/arc.c",
+      "path_type": "hardlink",
+      "sha256": "ce623f04954c5b70c3d1a3b88b95e7b3e076b277be9d3527b8c3e3333a6d33ca",
+      "size_in_bytes": 499
+    },
+    {
+      "_path": "Library/share/doc/gd-/copyrotated.c",
+      "path_type": "hardlink",
+      "sha256": "54db4eae09963cc4ac417aacaf9a1016cf0f9f1fff4504580b2d33887875c89d",
+      "size_in_bytes": 1851
+    },
+    {
+      "_path": "Library/share/doc/gd-/crop.c",
+      "path_type": "hardlink",
+      "sha256": "3bb85b72095a4ab19d390dc32389eb9141867c77c6e70d6325ce1963b33620ff",
+      "size_in_bytes": 1160
+    },
+    {
+      "_path": "Library/share/doc/gd-/flip.c",
+      "path_type": "hardlink",
+      "sha256": "9996a401f59fd290e41bce75e74624ae4a56104f9c59654097d6575145b04baf",
+      "size_in_bytes": 1201
+    },
+    {
+      "_path": "Library/share/doc/gd-/gif.c",
+      "path_type": "hardlink",
+      "sha256": "e3cec2975e4660ddd881dd144c307d63b8ba6ef4d20776d0289911ba026e9ffb",
+      "size_in_bytes": 1034
+    },
+    {
+      "_path": "Library/share/doc/gd-/nnquant.c",
+      "path_type": "hardlink",
+      "sha256": "0c13aa3993d3c061c0d4c727e779f01d36ab36f0eeda328e62cdbc28510d5599",
+      "size_in_bytes": 908
+    },
+    {
+      "_path": "Library/share/doc/gd-/noIcon.pic",
+      "path_type": "hardlink",
+      "sha256": "8f8dcd1f59b82e2c5007cff5d2e3db7569d60baf7ce04c80d78f75aba232098f",
+      "size_in_bytes": 63486
+    },
+    {
+      "_path": "Library/share/doc/gd-/noIcon.sgi",
+      "path_type": "hardlink",
+      "sha256": "fb7f05de4f1da665d39dc334bc64b063d247d4822e078c6c1600f875de24b4c1",
+      "size_in_bytes": 66605
+    },
+    {
+      "_path": "Library/share/doc/gd-/noIcon.tga",
+      "path_type": "hardlink",
+      "sha256": "5710df039ca3eb2fc11854e56bcea94cfc138f42ab3dbc7cdfe1a2dcf3a5cad3",
+      "size_in_bytes": 153682
+    },
+    {
+      "_path": "Library/share/doc/gd-/noIconAlpha.tga",
+      "path_type": "hardlink",
+      "sha256": "20f82293f194eeab0b41f0a3355df6f6b1054440ffe43610d38496143a394461",
+      "size_in_bytes": 153682
+    },
+    {
+      "_path": "Library/share/doc/gd-/test_crop_threshold.png",
+      "path_type": "hardlink",
+      "sha256": "e81d15b5a0e2e14743a86f3ae87836f0d999fab6c020d4e694ee91ada443cc2d",
+      "size_in_bytes": 7919
+    },
+    {
+      "_path": "Library/share/doc/gd-/tgaread.c",
+      "path_type": "hardlink",
+      "sha256": "baa72e66f2fc90d2583b0a7ea28781ecd155beb2e43a4ced7621a3e9b29d3c1b",
+      "size_in_bytes": 884
+    },
+    {
+      "_path": "Library/share/doc/gd-/tiffread.c",
+      "path_type": "hardlink",
+      "sha256": "225998a376a6fc1ed8b9a23f3dd17575fcfc6687772fceba198adc767f225dee",
+      "size_in_bytes": 1122
+    },
+    {
+      "_path": "Library/share/doc/gd-/windows.c",
+      "path_type": "hardlink",
+      "sha256": "e231f4cc4e149dcc569c4c5d05379054392e7450ac1ce6591ad228d6ac2cb4b9",
+      "size_in_bytes": 7470
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,53 @@
+{
+  "paths": [
+    {
+      "_path": "Library/usr/bin/msys-icudata56.dll",
+      "path_type": "hardlink",
+      "sha256": "b35e1d2a64142014d3f07ee4cfdd6ea1e05c32266e79c3471a51ca45aacd3ad5",
+      "size_in_bytes": 25052856
+    },
+    {
+      "_path": "Library/usr/bin/msys-icui18n56.dll",
+      "path_type": "hardlink",
+      "sha256": "cee1fceb9b63244e96f86f42e1d559c5d7a936eababe48fbbb60c0ebd3af4938",
+      "size_in_bytes": 2178132
+    },
+    {
+      "_path": "Library/usr/bin/msys-icuio56.dll",
+      "path_type": "hardlink",
+      "sha256": "270fb6933a8c3bd8c2482849d9791ba2f5a21a31cca8080ea09f6037883c0a7f",
+      "size_in_bytes": 47634
+    },
+    {
+      "_path": "Library/usr/bin/msys-icule56.dll",
+      "path_type": "hardlink",
+      "sha256": "93c4e70dd184f16fba695b820423202139c8d5b3ebb631cf94210a03dc62ff21",
+      "size_in_bytes": 313530
+    },
+    {
+      "_path": "Library/usr/bin/msys-iculx56.dll",
+      "path_type": "hardlink",
+      "sha256": "46ed3b6382f31b093391a606e3290e9fcab9b277b7502dec7f62564ac3fb5d01",
+      "size_in_bytes": 41202
+    },
+    {
+      "_path": "Library/usr/bin/msys-icutest56.dll",
+      "path_type": "hardlink",
+      "sha256": "0a4ecd86ce80b9134fc518b2bfa446ac345d453e7101a6730b5bf65118e34743",
+      "size_in_bytes": 55728
+    },
+    {
+      "_path": "Library/usr/bin/msys-icutu56.dll",
+      "path_type": "hardlink",
+      "sha256": "f4f9e72c4a635e49f7f80c3856876052002b75bd4f03e7a077ac379a7e6c8b5c",
+      "size_in_bytes": 180898
+    },
+    {
+      "_path": "Library/usr/bin/msys-icuuc56.dll",
+      "path_type": "hardlink",
+      "sha256": "d3b5733a5d0ffd24c560c3702860626164d9b439f408f696e22fe88c301551a1",
+      "size_in_bytes": 1380987
+    }
+  ],
+  "paths_version": 1
+}

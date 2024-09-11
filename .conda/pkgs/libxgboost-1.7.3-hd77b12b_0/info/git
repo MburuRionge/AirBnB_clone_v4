@@ -1,0 +1,26 @@
+==> C:\Users\dev-admin\croot2\xgboost-split_1675461376218\_build_env\Library\bin\git.exe log -n1 <==
+commit ccf43d4ba0a94e2f0a3cc5a526197539ae46f410
+Author: Jiaming Yuan <jm.yuan@outlook.com>
+Date:   Fri Jan 6 20:34:05 2023 +0800
+
+    Bump R package version to 1.7.3. (#8649)
+==> C:\Users\dev-admin\croot2\xgboost-split_1675461376218\_build_env\Library\bin\git.exe describe --tags --dirty <==
+v1.7.3-dirty
+==> C:\Users\dev-admin\croot2\xgboost-split_1675461376218\_build_env\Library\bin\git.exe status <==
+HEAD detached at v1.7.3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   include/xgboost/version_config.h
+	modified:   python-package/xgboost/VERSION
+	modified:   python-package/xgboost/libpath.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	build_env_setup.bat
+	conda_build.bat
+	install-libxgboost.sh
+	install-win-wrapper.bat
+	metadata_conda_debug.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")

@@ -1,0 +1,42 @@
+# This file created by conda-build 0+unknown
+# meta.yaml template originally from:
+# C:\Users\ray\conda\conda-recipes\msys2\m2-findutils, last modified Mon Dec 19 01:03:46 2016
+# ------------------------------------------------
+
+package:
+    name: m2-findutils
+    version: 4.6.0
+source:
+    md5: 8cedab8f11e97359db1aeb0423c60a85
+    url: http://msys2-sources.continuum.io/msys2-sources/msys/sources/findutils-4.6.0-1.src.tar.gz
+build:
+    number: '2'
+    string: '2'
+requirements:
+    build: []
+    run:
+        - msys2-conda-epoch >=20160418
+        - m2-libiconv
+        - m2-libintl
+about:
+    home: http://www.gnu.org/software/findutils
+    license: GPL, GPL3
+    summary: GNU utilities to locate files
+extra:
+    msys2-binaries:
+        win-32:
+            md5: 836ebf559cc22e4d0574ccd929d2f3e1
+            mv-dsts:
+                - Library/
+            mv-srcs:
+                - '*'
+            srcpkg: msys/findutils
+            url: http://msys2-sources.continuum.io/msys2-sources/msys/i686/findutils-4.6.0-1-i686.pkg.tar.xz
+        win-64:
+            md5: 494723cfd9d52231dde5d746fc948851
+            mv-dsts:
+                - Library/
+            mv-srcs:
+                - '*'
+            srcpkg: msys/findutils
+            url: http://msys2-sources.continuum.io/msys2-sources/msys/x86_64/findutils-4.6.0-1-x86_64.pkg.tar.xz

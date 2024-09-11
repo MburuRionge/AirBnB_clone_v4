@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/msys2/win-64",
+  "constrains": [],
+  "depends": [
+    "m2-libiconv",
+    "m2-libintl",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "features": "",
+  "fn": "m2-findutils-4.6.0-2.tar.bz2",
+  "license": "GPL, GPL3",
+  "md5": "42c99a28d821ac95e3ec8dc2db27fb4b",
+  "name": "m2-findutils",
+  "platform": "win32",
+  "sha256": "b55655340790ea0707e25d4f20cb364e49f26ffdbbd873029f1fe7514d0b646d",
+  "size": 650365,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/msys2/win-64/m2-findutils-4.6.0-2.tar.bz2",
+  "version": "4.6.0"
+}

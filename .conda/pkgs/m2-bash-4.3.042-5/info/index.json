@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "5",
+  "build_number": 5,
+  "depends": [
+    "m2-msys2-runtime",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "license": "GPL",
+  "name": "m2-bash",
+  "platform": "win",
+  "subdir": "win-64",
+  "version": "4.3.042"
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+Here is your search results!
+{% endblock %} 
+
+{% block content%}
+<form method="GET" action="{{ url_for('auth.search') }}">
+    <input type="text" name="q" placeholder="Search..." value="{{ request.args.get('q', '') }}">
+    <button type="submit">Search</button>
+</form>
+<h2 align="center" style="color: #00FF00; font-weight: bold;">Search results</h2>
+<ul>
+
+    {% for user in results %}
+        <li align="center">{{ user.name }} ({{ user.email }})</li>
+    {% else %}
+        <li align="center">No results found</li>
+    {% endfor %}
+</ul>
+
+<h2 align="center" style="color: #00FF00; font-weight: bold;">{{ user.name }} details</h2>
+<ul style="margin-bottom: 20px;">
+    {% for note in user_notes %}
+        <li align="center">{{ note.data }}</li>
+    {% else %}
+        <li align="center">No notes found</li>
+    {% endfor %}
+</ul>
+{% endblock %}

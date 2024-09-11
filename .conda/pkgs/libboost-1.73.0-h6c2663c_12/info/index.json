@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "h6c2663c_12",
+  "build_number": 12,
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0",
+    "xz >=5.2.5,<6.0a0",
+    "zlib >=1.2.12,<1.3.0a0",
+    "zstd >=1.5.2,<1.6.0a0"
+  ],
+  "license": "BSL-1.0",
+  "license_family": "OTHER",
+  "name": "libboost",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1655891021895,
+  "version": "1.73.0"
+}

@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "2",
+  "build_number": 2,
+  "depends": [
+    "m2-gcc-libs",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "license": "GPL, custom:\"icu\"",
+  "name": "m2-icu",
+  "platform": "win",
+  "subdir": "win-64",
+  "version": "56.1"
+}

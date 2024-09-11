@@ -1,0 +1,41 @@
+# This file created by conda-build 0+unknown
+# meta.yaml template originally from:
+# C:\Users\ray\conda\conda-recipes\msys2\m2-bash, last modified Mon Dec 19 01:03:46 2016
+# ------------------------------------------------
+
+package:
+    name: m2-bash
+    version: 4.3.042
+source:
+    md5: 6c8dce79f157d2173c7ffbd35a216029
+    url: http://msys2-sources.continuum.io/msys2-sources/msys/sources/bash-4.3.042-4.src.tar.gz
+build:
+    number: '5'
+    string: '5'
+requirements:
+    build: []
+    run:
+        - msys2-conda-epoch >=20160418
+        - m2-msys2-runtime
+about:
+    home: http://www.gnu.org/software/bash/bash.html
+    license: GPL
+    summary: The GNU Bourne Again shell
+extra:
+    msys2-binaries:
+        win-32:
+            md5: f500e98783fc0d0b4f443d91889ab0d3
+            mv-dsts:
+                - Library/
+            mv-srcs:
+                - '*'
+            srcpkg: msys/bash
+            url: http://msys2-sources.continuum.io/msys2-sources/msys/i686/bash-4.3.042-4-i686.pkg.tar.xz
+        win-64:
+            md5: 974802d3710643a0462fa9dce2a7d923
+            mv-dsts:
+                - Library/
+            mv-srcs:
+                - '*'
+            srcpkg: msys/bash
+            url: http://msys2-sources.continuum.io/msys2-sources/msys/x86_64/bash-4.3.042-4-x86_64.pkg.tar.xz

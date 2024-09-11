@@ -1,0 +1,113 @@
+{
+  "paths": [
+    {
+      "_path": "Lib/site-packages/lockfile-0.12.2-py3.10.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "6b19860dadbcf959b41afcedf225f7f90a8b876f0ae319f793e52c4882e40b86",
+      "size_in_bytes": 2509
+    },
+    {
+      "_path": "Lib/site-packages/lockfile-0.12.2-py3.10.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "6e2aadbcae98b560455514def01e5f77db0ffb184aa929028133251220f35362",
+      "size_in_bytes": 546
+    },
+    {
+      "_path": "Lib/site-packages/lockfile-0.12.2-py3.10.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "Lib/site-packages/lockfile-0.12.2-py3.10.egg-info/not-zip-safe",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "Lib/site-packages/lockfile-0.12.2-py3.10.egg-info/pbr.json",
+      "path_type": "hardlink",
+      "sha256": "e1a020e7ed7593d28ebc5b0bb1d56fdf1d4b6f79fe0b694dba1a484a6dfd3886",
+      "size_in_bytes": 46
+    },
+    {
+      "_path": "Lib/site-packages/lockfile-0.12.2-py3.10.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "3d0abe3e8f9631c12a42e96531a6a0727a4752fb15508ebf30dca059607f498d",
+      "size_in_bytes": 9
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "4eaa73f740f02987e13ec7f354e265f384cbf3ba5d144e5e3cd1dd5c0c6ce139",
+      "size_in_bytes": 9371
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__pycache__/__init__.cpython-310.pyc",
+      "path_type": "hardlink",
+      "sha256": "502b205e99cb6e0be84ca0a7d854c083677c79d88d536f345f08f83c56ea229d",
+      "size_in_bytes": 9522
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__pycache__/linklockfile.cpython-310.pyc",
+      "path_type": "hardlink",
+      "sha256": "7316271709114b295ea3e25557c1c35c385415c5d0105a76343a42b22ee34a87",
+      "size_in_bytes": 2248
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__pycache__/mkdirlockfile.cpython-310.pyc",
+      "path_type": "hardlink",
+      "sha256": "de18531e7e21ae8f723029c8f08d80eb2172eafab0681f97a9511fc3b53ef35d",
+      "size_in_bytes": 2630
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__pycache__/pidlockfile.cpython-310.pyc",
+      "path_type": "hardlink",
+      "sha256": "4342b1879958ee77fad62f66addd62f63908199155d730da2e91c06acfc2bfa6",
+      "size_in_bytes": 4847
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__pycache__/sqlitelockfile.cpython-310.pyc",
+      "path_type": "hardlink",
+      "sha256": "012b3e7f19432f1c2a3bdd6e8f138d372ca97c928c321bd0c7e155494550a29a",
+      "size_in_bytes": 3675
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/__pycache__/symlinklockfile.cpython-310.pyc",
+      "path_type": "hardlink",
+      "sha256": "dc3c12d9aa98f09a7273b07027e30b4449278c92731c964bed49c87e9a740b77",
+      "size_in_bytes": 2147
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/linklockfile.py",
+      "path_type": "hardlink",
+      "sha256": "0bb387dc7e0674aebcbb8150829f1f90fda43b87f25134b28f75fa6e581fa1b7",
+      "size_in_bytes": 2652
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/mkdirlockfile.py",
+      "path_type": "hardlink",
+      "sha256": "7b7aa020bf9eb5930bb12fb77edd7d896ffc210dfad0736418ea84df204ab14c",
+      "size_in_bytes": 3096
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/pidlockfile.py",
+      "path_type": "hardlink",
+      "sha256": "ba41fdba4e8d16ec725661b94225b0e222aaddf4fb323a9482e5fde5abd83c86",
+      "size_in_bytes": 6090
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/sqlitelockfile.py",
+      "path_type": "hardlink",
+      "sha256": "a364cc90c458d22c27fa22f55cc4512054ad314912e22dda8dc79e60d9ed2858",
+      "size_in_bytes": 5506
+    },
+    {
+      "_path": "Lib/site-packages/lockfile/symlinklockfile.py",
+      "path_type": "hardlink",
+      "sha256": "001c175e6bd31ef0a5e6f88f6e54a12f73c6fa01ac2e24f5ae800c7c3470862f",
+      "size_in_bytes": 2616
+    }
+  ],
+  "paths_version": 1
+}

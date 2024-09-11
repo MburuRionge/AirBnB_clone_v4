@@ -1,0 +1,53 @@
+# This file created by conda-build 3.21.7
+# meta.yaml template originally from:
+# C:\Users\builder\adipietro\aggregate\lockfile-feedstock\recipe, last modified Fri Jan  8 10:53:46 2021
+# ------------------------------------------------
+
+package:
+  name: lockfile
+  version: 0.12.2
+source:
+  sha256: 6aed02de03cba24efabcd600b30540140634fc06cfa603822d508d5361e9f799
+  url: https://pypi.io/packages/source/l/lockfile/lockfile-0.12.2.tar.gz
+build:
+  script: python setup.py install
+  string: py310haa95532_0
+requirements:
+  host:
+    - bzip2 1.0.8 he774522_0
+    - ca-certificates 2021.10.26 haa95532_2
+    - certifi 2021.5.30 py310haa95532_0
+    - libffi 3.4.2 h604cdb4_1
+    - openssl 1.1.1m h2bbff1b_0
+    - pbr 5.6.0 pyhd3eb1b0_0
+    - pip 21.2.4 py310haa95532_0
+    - python 3.10.0 h96c0403_3
+    - setuptools 58.0.4 py310haa95532_0
+    - sqlite 3.37.0 h2bbff1b_0
+    - tk 8.6.11 h2bbff1b_0
+    - tzdata 2021e hda174b7_0
+    - vc 14.2 h21ff451_1
+    - vs2015_runtime 14.27.29016 h5e58377_2
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - wincertstore 0.2 py310haa95532_2
+    - xz 5.2.5 h62dcd97_0
+    - zlib 1.2.11 h8cc25b3_4
+  run:
+    - python >=3.10,<3.11.0a0
+test:
+  imports:
+    - lockfile
+about:
+  description: 'lockfile exports a LockFile class which provides a simple API for
+    locking files.
+
+    '
+  doc_source_url: http://git.openstack.org/cgit/openstack/pylockfile/tree/doc/source/index.rst
+  doc_url: http://docs.openstack.org/developer/pylockfile/
+  home: http://launchpad.net/pylockfile
+  license: MIT
+  license_file: LICENSE
+  summary: Platform-independent file locking module
+extra:
+  copy_test_source_files: true
+  final: true
