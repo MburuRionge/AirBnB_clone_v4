@@ -4,3 +4,7 @@ AppData/
 .venv/
 env/
 __pycache__/
+NTUSER.DAT*
+*.regtrans-ms
+*.blf
+*.ini
